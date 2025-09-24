@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: black;
+        width: 600px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        place-content: center;
+      }
+      .head {
+        display: flex;
+        justify-content: end;
+      }
+      .head img {
+        width: 30px;
+      }
+
+      /* SEARCh */
+      .search {
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        margin-top: 20px;
+      }
+      .search input {
+        width: 96%;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #1c1c1e;
+        color: #8d8c92;
+        font-size: 17px;
+      }
+      .search img {
+        width: 20px;
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+      }
+      /* GRID */
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .box img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .box {
+        background-color: #1c1c1e;
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .box p {
+        color: #9a98a3;
+        font-size: 18px;
+        margin: 0;
+        margin-top: 13px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .row h1 {
+        margin: 0;
+        color: white;
+      }
+
+      .list h1 {
+        color: white;
+        font-size: 26px;
+      }
+      .remine {
+        display: flex;
+        background-color: #1c1c1e;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      .left {
+        color: white;
+        display: flex;
+        font-size: 20px;
+        margin: 0;
+        gap: 10px;
+      }
+      .left p {
+        margin: 0;
+        margin-top: 7px;
+      }
+      .left img {
+        width: 40px;
+        height: 40px;
+      }
+      .right {
+        color: #9a98a3;
+        font-size: 24px;
+        margin: 0;
+        margin-top: 7px;
+        margin-right: 20px;
+        height: 10px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 200px;
+        padding: 10px;
+      }
+      .left1 {
+        display: flex;
+        color: #1381f0;
+        gap: 10px;
+      }
+      .left1 p {
+        margin: 0;
+        margin-top: 3px;
+        font-size: 22px;
+        font-weight: 500;
+      }
+      .left1 img {
+        width: 30px;
+        height: 30px;
+      }
+      .right1 {
+        color: #1381f0;
+        margin-top: 6px;
+        font-size: 22px;
+        font-weight: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head"><img src="more.jpeg" /></div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <img src="voice.jpeg" />
+      </div>
+      <div class="main">
+        <div class="box box1">
+          <div class="row">
+            <img src="today.jpeg" />
+            <h1>0</h1>
+          </div>
+          <p>Today</p>
+        </div>
+        <div class="box box2">
+          <div class="row">
+            <img src="plan.jpeg" />
+            <h1>0</h1>
+          </div>
+          <p>In plans</p>
+        </div>
+        <div class="box box3">
+          <div class="row">
+            <img src="all.jpeg" />
+            <h1>2</h1>
+          </div>
+          <p>All</p>
+        </div>
+        <div class="box box4">
+          <div class="row">
+            <img src="flag.jpeg" />
+            <h1>0</h1>
+          </div>
+          <p>With flags</p>
+        </div>
+        <div class="box box5">
+          <div class="row">
+            <img src="finish.jpeg" />
+          </div>
+          <p>Finished</p>
+        </div>
+      </div>
+      <div class="list">
+        <h1>My lists</h1>
+        <div class="remine">
+          <div class="left">
+            <img src="remine.jpeg" />
+            <p>Reminders</p>
+          </div>
+          <div class="right">
+            <span>2</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="left1">
+          <img src="plus.jpeg" />
+          <p>Reminder</p>
+        </div>
+        <div class="right1">
+          <span>Add</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
